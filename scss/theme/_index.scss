@@ -1,0 +1,110 @@
+.site-main {
+
+	.module-main {//background: $brown-main; 
+				color:$white;
+				max-height:700px;
+				overflow-y: hidden;
+				position: relative;
+
+				.titre-slider {color:$white;
+								position:absolute;
+								bottom:2em;
+								right: 2em;
+								font-size: 3em;
+								font-family : 'carbontyperegular', arial;
+								text-transform: uppercase;
+				}
+
+				img {display:block}
+	}
+
+	.module-cervezas {
+				// background: url('img/wood_pattern.png') ;
+				// background: lighten($brown-second, 25% );
+				// background: #ffffff;
+				// background: #FCFCFC;
+				background: url('img/ricepaper2.png') #ffffff;
+				color:$brown-light;
+				color: #555453;
+				padding: 4em 10%;
+				margin-left:-5em;
+				//border-bottom: 2px solid $brown-light;
+
+		.module-cerveza {text-align: center;
+						@extend %grid__item;
+				        @extend %one-third;
+						@extend %tablet--one-whole;
+						@extend %phone--one-whole;
+		}
+
+		h4 {
+			color: #555453;
+			font-size: 2em;
+			color : #dd9716;
+			margin: 1em 0;
+		}
+
+		h6 {
+			margin-bottom: 1em;
+			font-family: 'dejavu_serifitalic', serif;
+			font-size: 0.85em;
+			color : #dd9716;
+		}
+
+		img {margin: 0 auto;
+		}
+
+		p {
+			text-align: justify;
+			font-size: 0.85em;
+		}
+	}
+
+	.module-motivacion {padding: 4em 10% 2em;
+						color:$gris;
+						//font-family: 'dejavu_serifitalic', serif;
+						// background: $brown-second;
+						// background: #BCBE97;
+						// background: #C5E0DC;
+						// background: #889989;
+						//background: #B1BEB2;
+						//background: url('img/old_wall.png') $brown-second;
+						background: url('img/broken_noise.png');
+
+		.grid {
+			margin-left:-5em;
+		}
+
+		.module-motivacion-item {
+				text-align: justify;
+				font-size: 0.85em;
+				@extend %grid__item;
+		        @extend %one-third;
+				@extend %tablet--one-whole;
+				@extend %phone--one-whole;
+		}
+
+		h4 {
+			font-size: 3em;
+			color: #555453;
+			color : $white;
+			margin: 1em 0;
+			text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+			letter-spacing: 5px;
+			line-height: 1.4em;
+		}
+
+		.icon-lupulo {
+			display: block;
+			margin: 2em auto;
+		}
+
+	}
+
+	.module-map {color:$white;
+
+		#map_canvas {height:25em;}
+	}
+	
+	
+}

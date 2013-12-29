@@ -1,0 +1,17 @@
+.site-footer {text-align:center;
+			background-color: $gris;
+			font-size:0.7em;
+			color: darken($white, 20%);
+			padding: 2em 0 0.5em;
+			
+			.site-info {margin-top:1.5em;}
+}
+
+.site-social {
+				a {opacity:0.5;
+				margin:0 0.5em 0.5em;
+				@include transition(opacity, 0.2s, ease-in-out);
+			
+				&:hover {opacity:1;}
+			}
+}
