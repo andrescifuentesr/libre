@@ -531,7 +531,7 @@ a:active {
 .site-main .module-cervezas .module-cerveza, .site-main .module-motivacion .module-motivacion-item {
   display: inline-block;
   /* [1] */
-  padding-left: 5em;
+  padding-left: 80px;
   /* [2] */
   vertical-align: top;
   /* [3] */
@@ -958,10 +958,26 @@ h1, h2, h3, h4, h5, h6 {
   width: 20%;
   float: right;
   margin-top: 2.5em; }
+  @media only screen and (min-width: 45em) and (max-width: 70em) {
+    .site-social-header {
+      width: 100%;
+      text-align: center;
+      margin: 0; } }
+  @media (max-width: 45em) {
+    .site-social-header {
+      width: 100%;
+      text-align: center;
+      margin: 0; } }
 
 .site-branding {
   width: 80%;
   float: left; }
+  @media (max-width: 45em) {
+    .site-branding {
+      width: 100%; } }
+  @media only screen and (min-width: 45em) and (max-width: 70em) {
+    .site-branding {
+      width: 100%; } }
   .site-branding a {
     margin-left: 50%;
     text-indent: -9999px;
@@ -969,6 +985,12 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 180px;
     height: 120px; }
+    @media only screen and (min-width: 45em) and (max-width: 70em) {
+      .site-branding a {
+        margin: 0 auto; } }
+    @media (max-width: 45em) {
+      .site-branding a {
+        margin: 0 auto; } }
 
 /* =Menu
 ----------------------------------------------- */
@@ -1035,6 +1057,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3em;
     font-family: 'carbontyperegular', arial;
     text-transform: uppercase; }
+    @media only screen and (min-width: 45em) and (max-width: 70em) {
+      .site-main .module-main .titre-slider {
+        bottom: 0.5em;
+        right: 0.5em;
+        font-size: 1.5em; } }
+    @media (max-width: 45em) {
+      .site-main .module-main .titre-slider {
+        bottom: 0.5em;
+        right: 0.5em;
+        font-size: 1em; } }
   .site-main .module-main img {
     display: block; }
 .site-main .module-cervezas {
@@ -1042,7 +1074,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #83644a;
   color: #555453;
   padding: 4em 10%;
-  margin-left: -5em; }
+  margin-left: -80px; }
+  @media only screen and (min-width: 45em) and (max-width: 70em) {
+    .site-main .module-cervezas {
+      padding: 4em 15%; } }
+  @media (max-width: 45em) {
+    .site-main .module-cervezas {
+      padding: 1em 2.5%; } }
   .site-main .module-cervezas .module-cerveza {
     text-align: center; }
   .site-main .module-cervezas h4 {
@@ -1064,8 +1102,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4em 10% 2em;
   color: #333333;
   background: url("img/broken_noise.png"); }
+  @media only screen and (min-width: 45em) and (max-width: 70em) {
+    .site-main .module-motivacion {
+      padding: 4em 15%; } }
+  @media (max-width: 45em) {
+    .site-main .module-motivacion {
+      padding: 1em 2.5%; } }
   .site-main .module-motivacion .grid {
-    margin-left: -5em; }
+    margin-left: -80px; }
   .site-main .module-motivacion .module-motivacion-item {
     text-align: justify;
     font-size: 0.85em; }
@@ -1077,6 +1121,9 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
     letter-spacing: 5px;
     line-height: 1.4em; }
+    @media (max-width: 45em) {
+      .site-main .module-motivacion h4 {
+        font-size: 2em; } }
   .site-main .module-motivacion .icon-lupulo {
     display: block;
     margin: 2em auto; }
@@ -1088,11 +1135,21 @@ h1, h2, h3, h4, h5, h6 {
 .site-footer {
   text-align: center;
   background-color: #333333;
-  font-size: 0.7em;
+  font-size: 0.85em;
   color: #cccccc;
   padding: 2em 0 0.5em; }
-  .site-footer .site-info {
-    margin-top: 1.5em; }
+  .site-footer .site-info p:first-child {
+    color: #dd9716; }
+  .site-footer .site-info p:last-child {
+    font-family: 'dejavu_serifitalic', serif; }
+  .site-footer .site-legal {
+    margin-top: 2em;
+    font-size: 0.85em;
+    position: relative; }
+    @media (max-width: 45em) {
+      .site-footer .site-legal {
+        margin: 4em 2.5% 1em;
+        text-align: justify; } }
 
 .site-social a {
   opacity: 0.5;
@@ -1104,6 +1161,29 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 0.2s ease-in-out; }
   .site-social a:hover {
     opacity: 1; }
+
+.site-social-footer {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #1a1a1a; }
+
+.site-social-footer:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #404040; }
+
+.site-social-footer:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #404040; }
 
 *,
 *:after,

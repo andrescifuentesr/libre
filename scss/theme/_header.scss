@@ -3,19 +3,27 @@
 	width: 100%;
 	background: url('img/old_wall.png') $brown-main;
 	padding: 0.2em 0;
-	//border-bottom:5px solid $white;
 }
 
 .site-social-header {
 	width:20%;
 	float:right;
 	margin-top: 2.5em;
-
+	@include mq(tablet) {width:100%;
+		text-align: center;
+		margin: 0;}
+	@include mq(phone) {width:100%;
+		text-align: center;
+		margin: 0;
+	}
 }
 
 .site-branding {
 	width:80%;
 	float:left;
+	@include mq(phone) {width:100%;}
+	@include mq(tablet) {width:100%;}
+
 
 		a {margin-left: 50%;
 			text-indent: -9999px;
@@ -23,6 +31,8 @@
 			display: block;
 			width: 180px;
 			height: 120px;
+			@include mq(tablet) {margin: 0 auto;}
+			@include mq(phone) {margin: 0 auto;}
 	}
 }
 

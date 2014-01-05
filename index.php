@@ -33,7 +33,7 @@ get_header(); ?>
 						<p>Esta cerveza de trigo ha sido madurada con pulpa pura de maracuyá. De intenso aroma, color dorado, agradable sabor cítrico y refrescante. Esta unión de cerveza y fruta brinda un encanto único lleno de pasión. Tiene cuerpo ligero y espuma alta. Tómala lo más fresca posible. </p>
 
 						<h6>Maltas:</h6>
-						<p>2 Row, White Wheat y Bonlander Munich <br>
+						<p>2 Row, White Wheat y Bonlander Munich <br>&nbsp;<br>
 						
 						<h6>Lúpulos:</h6> 
 						<p>Cascade </p>
@@ -50,10 +50,11 @@ get_header(); ?>
 						<h6>Estilo: </h6>
 						<p>American India Pale Ale. Alc/Vol: 5.5% IBUs: 60 </p>
 
-						<p>Esta cerveza está hecha con maltas acarameladas y una cantidad generosa de lúpulo que le da un agradable y especial amargor, con intenso aroma cítrico y floral. De color dorado oscuro, cuerpo medio y espuma gruesa. </p>
+						<p>Esta cerveza está hecha con maltas acarameladas y una cantidad generosa de lúpulo que le da un agradable y especial amargor, con intenso aroma cítrico y floral. De color dorado oscuro, cuerpo medio y espuma gruesa. <br>&nbsp;</p>
+
 
 						<h6>Maltas:</h6>
-						<p>2 Row, Bonlander Munich, Caramel y Carapils <br>
+						<p>2 Row, Bonlander Munich, Caramel y Carapils <br>&nbsp;<br>
 						
 						<h6>Lúpulos:</h6>
 						<p>Cascade, Columbus y Centennial </p>
@@ -70,7 +71,7 @@ get_header(); ?>
 						<h6>Estilo: </h6>
 						<p>American Brown Ale. Alc/Vol: 5% IBUs: 30 </p>
 
-						<p>Esta cerveza de estilo Brown Ale está hecha con una mezcla de maltas caramelo y extracto natural de avellana. Tiene agradable aroma a caramelo y nueces, un suave sabor tostado y su color es café rojizo. Tiene cuerpo y espuma media. Una cerveza rica en aromas y sabores.</p>
+						<p>Esta cerveza de estilo Brown Ale está hecha con una mezcla de maltas caramelo y extracto natural de avellana. Tiene agradable aroma a caramelo y nueces, un suave sabor tostado y su color es café rojizo. Tiene cuerpo y espuma media. Una cerveza rica en aromas y sabores.<br>&nbsp;<br>&nbsp;</p>
 
 						<h6>Maltas:</h6>
 						<p>2 Row, Bonlander Munich, Caramel y Chocolate Malt <br>

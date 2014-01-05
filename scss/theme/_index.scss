@@ -13,6 +13,16 @@
 								font-size: 3em;
 								font-family : 'carbontyperegular', arial;
 								text-transform: uppercase;
+								@include mq(tablet) {
+									bottom:0.5em;
+									right: 0.5em;
+									font-size: 1.5em;
+								};
+								@include mq(phone) {
+									bottom:0.5em;
+									right: 0.5em;
+									font-size: 1em;
+								}
 				}
 
 				img {display:block}
@@ -27,8 +37,10 @@
 				color:$brown-light;
 				color: #555453;
 				padding: 4em 10%;
-				margin-left:-5em;
-				//border-bottom: 2px solid $brown-light;
+				margin-left:-80px;
+				@include mq(tablet) {padding: 4em 15%; }
+				@include mq(phone) {padding: 1em 2.5%; }
+
 
 		.module-cerveza {text-align: center;
 						@extend %grid__item;
@@ -40,7 +52,7 @@
 		h4 {
 			color: #555453;
 			font-size: 2em;
-			color : #dd9716;
+			color : $sous-titre;
 			margin: 1em 0;
 		}
 
@@ -70,9 +82,10 @@
 						//background: #B1BEB2;
 						//background: url('img/old_wall.png') $brown-second;
 						background: url('img/broken_noise.png');
-
+						@include mq(tablet) {padding: 4em 15%; }
+						@include mq(phone) {padding: 1em 2.5%; }
 		.grid {
-			margin-left:-5em;
+			margin-left:-80px;
 		}
 
 		.module-motivacion-item {
@@ -92,6 +105,7 @@
 			text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
 			letter-spacing: 5px;
 			line-height: 1.4em;
+			@include mq(phone) {font-size: 2em; }
 		}
 
 		.icon-lupulo {

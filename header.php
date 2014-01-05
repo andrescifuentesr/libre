@@ -14,6 +14,12 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<!-- favicons -->
+<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/favicon-160x160.png" sizes="160x160" />
+<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/favicon-16x16.png" sizes="16x16" />
 
 <?php wp_head(); ?>
 </head>
@@ -27,15 +33,19 @@
 			<!--<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>-->
 		</div>
 		<div class="site-social site-social-header">
-			<a href="https://www.facebook.com/" target="_blank">
+			<a href="https://www.facebook.com/cervecerialibre" target="_blank">
 				<img src="<?php bloginfo('template_directory'); ?>/img/icon-facebook.svg" alt="linkfacebookedin" class="" >
 			</a>
-			<a href="https://twitter.com" target="_blank">
+			<a href="https://twitter.com/cervezalibre" target="_blank">
 				<img src="<?php bloginfo('template_directory'); ?>/img/icon-twitter.svg" alt="twitter" class="" >
 			</a>
-			<a href="#" target="_blank">
+			<a href="mailto:info@cervecerialibre.com">
+				<img src="<?php bloginfo('template_directory'); ?>/img/icon-mail.svg" alt="mail libre : info@cervecerialibre.com" class="" >
+			</a>
+			<a href="tel:0057-4-4484412" target="_blank">
 				<img src="<?php bloginfo('template_directory'); ?>/img/icon-phone.svg" alt="teléphono libre" class="" >
 			</a>
+		</div>
 		</div><!-- .site-social -->
 
 <!--
