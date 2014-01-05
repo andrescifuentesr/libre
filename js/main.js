@@ -87,7 +87,7 @@
 	var map = new google.maps.Map(document.getElementById('map_canvas'),
 		mapOptions);
 
-	var image = 'http://localhost:8888/libre/wp-content/themes/libre/img/icon-map.png';
+	var image = 'http://www.begik.co/wp-content/themes/libre/img/icon-map.png';
 
 	var marker = new google.maps.Marker({
 		map:map,
