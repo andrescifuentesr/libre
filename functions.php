@@ -76,17 +76,19 @@ add_action( 'widgets_init', 'libre_widgets_init' );
  * Enqueue scripts and styles.
  */
 function libre_scripts() {
-	wp_enqueue_style( 'libre-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'libre-style', get_template_directory_uri() . '/css/build/minified/global.css', array(), '20120208', 'all' );
 
-	wp_enqueue_script( 'libre-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	//wp_enqueue_style( 'libre-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'libre-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	//wp_enqueue_script( 'libre-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	//wp_enqueue_script( 'libre-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
     // Enqueue Google maps
 	wp_enqueue_script( 'libre-GoogleMaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyArEmbqneDepMsMr0aZAYE-XAVxRsl2B9E&sensor=false', false );
 
 	//Main JS
-	wp_enqueue_script( 'libre-main', get_template_directory_uri() . '/js/main.js', array(), '20131222', true );
+	wp_enqueue_script( 'libre-main', get_template_directory_uri() . '/js/build/production.min.js', array(), '20131222', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
