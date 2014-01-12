@@ -33,7 +33,7 @@
 				// background: lighten($brown-second, 25% );
 				// background: #ffffff;
 				// background: #FCFCFC;
-				background: url('img/ricepaper2.png') #ffffff;
+				background: url('../../../img/ricepaper2.png') #ffffff;
 				color:$brown-light;
 				color: #555453;
 				padding: 4em 10%;
@@ -73,7 +73,7 @@
 	}
 
 	.module-motivacion {padding: 4em 10% 2em;
-						color:$gris;
+						color:$white;
 						//font-family: 'dejavu_serifitalic', serif;
 						// background: $brown-second;
 						// background: #BCBE97;
@@ -81,7 +81,7 @@
 						// background: #889989;
 						//background: #B1BEB2;
 						//background: url('img/old_wall.png') $brown-second;
-						background: url('img/broken_noise.png');
+						background: url('../../../img/broken_noise.png');
 						@include mq(tablet) {padding: 4em 15%; }
 						@include mq(phone) {padding: 1em 2.5%; }
 		.grid {
