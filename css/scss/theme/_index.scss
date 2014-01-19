@@ -1,15 +1,17 @@
 .site-main {
 
-	.module-main {//background: $brown-main; 
+	.module-main {background: url('../../../img/image-home-unsplash.jpg') center center;
+				background-size: cover;
 				color:$white;
-				max-height:700px;
-				overflow-y: hidden;
+				height: 400px;
+				max-height:500px;
 				position: relative;
+				@include mq(phone) {height: 200px;}
 
 				.titre-slider {color:$white;
 								position:absolute;
-								bottom:2em;
-								right: 2em;
+								bottom:0.5em;
+								left: 1em;
 								font-size: 3em;
 								font-family : 'carbontyperegular', arial;
 								text-transform: uppercase;
@@ -25,14 +27,10 @@
 								}
 				}
 
-				img {display:block}
+				img {display:block;}
 	}
 
-	.module-cervezas {
-				// background: url('img/wood_pattern.png') ;
-				// background: lighten($brown-second, 25% );
-				// background: #ffffff;
-				// background: #FCFCFC;
+	.module-cervezas-logos{
 				background: url('../../../img/ricepaper2.png') #ffffff;
 				color:$brown-light;
 				color: #555453;
@@ -42,7 +40,8 @@
 				@include mq(phone) {padding: 1em 2.5%; }
 
 
-		.module-cerveza {text-align: center;
+		.module-cerveza-descripcion {
+						text-align: center;
 						@extend %grid__item;
 				        @extend %one-third;
 						@extend %tablet--one-whole;
@@ -51,16 +50,11 @@
 
 		h4 {
 			color: #555453;
-			font-size: 2em;
+			font-size: 3em;
 			color : $sous-titre;
 			margin: 1em 0;
-		}
-
-		h6 {
-			margin-bottom: 1em;
-			font-family: 'dejavu_serifitalic', serif;
-			font-size: 0.85em;
-			color : #dd9716;
+			@include mq(tablet) {margin: 0.5em 0; }
+			@include mq(phone) {margin: 0.5em 0;}
 		}
 
 		img {margin: 0 auto;
@@ -68,6 +62,47 @@
 
 		p {
 			text-align: justify;
+		}
+	}
+
+	.module-cervezas-calidades {
+		background: #5B696F;
+		color: #ffffff;
+		//margin-left:0;
+
+		.module-cerveza-calidad-title {
+			margin-left: 80px;
+			@include mq(tablet) {display: none; }
+			@include mq(phone) {display: none;}
+		}
+
+		.module-cerveza-line {
+			margin-left: 80px;
+			padding: 2em 0;
+			border-bottom: 1px solid lighten(#5B696F, 15%);
+			@include mq(phone) {margin-left: 0; }
+		}
+
+		.module-cerveza-line:nth-child(2) {
+			border-top: 1px solid lighten(#5B696F, 15%);
+		}
+
+		.descripcion-cerveza-item {
+			@extend %grid__item;
+			@extend %one-fifth;
+			@extend %tablet--one-whole;
+			@extend %phone--one-whole;
+		}
+
+		h6 {
+			font-family: 'oswaldlight', serif;
+			font-size: 1.5em;
+			color : #dd9716;
+		}
+
+		p {
+			margin: 0;
+			text-align: left;
 			font-size: 0.85em;
 		}
 	}
@@ -97,15 +132,30 @@
 				@extend %phone--one-whole;
 		}
 
-		h4 {
+		h1 {font-family: 'oswaldlight', sans-serif;
+			text-align: center;
+			text-transform: uppercase;
 			font-size: 3em;
 			color: #555453;
-			color : $white;
-			margin: 1em 0;
+			//color : $gris;
+			margin: 0.5em 0;
 			text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-			letter-spacing: 5px;
+			letter-spacing: 2px;
 			line-height: 1.4em;
 			@include mq(phone) {font-size: 2em; }
+		}
+
+		h3 {font-family: 'oswaldlight', sans-serif;
+			text-align: center;
+			text-transform: uppercase;
+			color: #555453;
+			text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+			//letter-spacing: 5px;
+
+		}
+
+		.module-tomate {
+			margin-top: 2em;
 		}
 
 		.icon-lupulo {

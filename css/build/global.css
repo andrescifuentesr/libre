@@ -1,15 +1,7 @@
 @font-face {
-  font-family: 'dejavu_serifbook';
-  src: url("../../fonts/DejaVuSerif-webfont.eot");
-  src: url("../../fonts/DejaVuSerif-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/DejaVuSerif-webfont.woff") format("woff"), url("../../fonts/DejaVuSerif-webfont.ttf") format("truetype"), url("../../fonts/DejaVuSerif-webfont.svg#dejavu_serifbook") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'dejavu_serifitalic';
-  src: url("../../fonts/DejaVuSerif-Italic-webfont.eot");
-  src: url("../../fonts/DejaVuSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/DejaVuSerif-Italic-webfont.woff") format("woff"), url("../../fonts/DejaVuSerif-Italic-webfont.ttf") format("truetype"), url("../../fonts/DejaVuSerif-Italic-webfont.svg#dejavu_serifitalic") format("svg");
+  font-family: 'latolight';
+  src: url("../../fonts/lato-lig-webfont.eot");
+  src: url("../../fonts/lato-lig-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-lig-webfont.woff") format("woff"), url("../../fonts/lato-lig-webfont.ttf") format("truetype"), url("../../fonts/lato-lig-webfont.svg#latolight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -594,7 +586,7 @@ a:active {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.site-main .module-cervezas .module-cerveza, .site-main .module-motivacion .module-motivacion-item {
+.site-main .module-cervezas-logos .module-cerveza-descripcion, .site-main .module-cervezas-calidades .descripcion-cerveza-item, .site-main .module-motivacion .module-motivacion-item {
   display: inline-block;
   /* [1] */
   padding-left: 80px;
@@ -643,7 +635,7 @@ a:active {
 /**
  * Thirds
  */
-.site-main .module-cervezas .module-cerveza, .site-main .module-motivacion .module-motivacion-item {
+.site-main .module-cervezas-logos .module-cerveza-descripcion, .site-main .module-motivacion .module-motivacion-item {
   width: 33.333%;
 }
 
@@ -653,6 +645,10 @@ a:active {
 /**
  * Fifths
  */
+.site-main .module-cervezas-calidades .descripcion-cerveza-item {
+  width: 20%;
+}
+
 /**
  * Sixths
  */
@@ -672,7 +668,7 @@ a:active {
   /**
    * Whole
    */
-  .site-main .module-cervezas .module-cerveza, .site-main .module-motivacion .module-motivacion-item {
+  .site-main .module-cervezas-logos .module-cerveza-descripcion, .site-main .module-cervezas-calidades .descripcion-cerveza-item, .site-main .module-motivacion .module-motivacion-item {
     width: 100%;
   }
 
@@ -701,11 +697,11 @@ a:active {
    * Twelfths
    */
 }
-@media only screen and (min-width: 45em) and (max-width: 70em) {
+@media only screen and (min-width: 45em) and (max-width: 65em) {
   /**
    * Whole
    */
-  .site-main .module-cervezas .module-cerveza, .site-main .module-motivacion .module-motivacion-item {
+  .site-main .module-cervezas-logos .module-cerveza-descripcion, .site-main .module-cervezas-calidades .descripcion-cerveza-item, .site-main .module-motivacion .module-motivacion-item {
     width: 100%;
   }
 
@@ -734,7 +730,7 @@ a:active {
    * Twelfths
    */
 }
-@media only screen and (min-width: 70em) and (max-width: 90em) {
+@media only screen and (min-width: 65em) and (max-width: 90em) {
   /**
    * Whole
    */
@@ -929,28 +925,6 @@ textarea {
   width: 98%;
 }
 
-/*!
- *
-.||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
-
-	.                                      '||            .
-  .||.  .... ... ... ...    ....  ... ...   ||   ....   .||.    ....
-   ||    '|.  |   ||'  || .|...||  ||'  ||  ||  '' .||   ||   .|...||
-   ||     '|.|    ||    | ||       ||    |  ||  .|' ||   ||   ||
-   '|.'    '|     ||...'   '|...'  ||...'  .||. '|..'|'  '|.'  '|...'
-		.. |      ||               ||
-		 ''      ''''             ''''      A Typographic Starter Kit
-
-  URL ........... http://typeplate.com
-  VERSION ....... 1.1.2
-  Github ........ https://github.com/typeplate/typeplate.github.io
-  AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
-  LICENSE ....... Creative Commmons Attribution 3.0
-  LICENSE URL ... http://creativecommons.org/licenses/by/3.0
-
- .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
- *
- */
 body {
   word-wrap: break-word;
 }
@@ -1056,11 +1030,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-social-header {
-  width: 20%;
+  width: 25%;
   float: right;
   margin-top: 2.5em;
 }
-@media only screen and (min-width: 45em) and (max-width: 70em) {
+@media only screen and (min-width: 45em) and (max-width: 65em) {
   .site-social-header {
     width: 100%;
     text-align: center;
@@ -1076,7 +1050,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-branding {
-  width: 80%;
+  width: 75%;
   float: left;
 }
 @media (max-width: 45em) {
@@ -1084,20 +1058,20 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
-@media only screen and (min-width: 45em) and (max-width: 70em) {
+@media only screen and (min-width: 45em) and (max-width: 65em) {
   .site-branding {
     width: 100%;
   }
 }
 .site-branding a {
-  margin-left: 50%;
+  margin-left: 55%;
   text-indent: -9999px;
   background: url("../../../img/logo-libre.svg") no-repeat;
   display: block;
   width: 180px;
   height: 120px;
 }
-@media only screen and (min-width: 45em) and (max-width: 70em) {
+@media only screen and (min-width: 45em) and (max-width: 65em) {
   .site-branding a {
     margin: 0 auto;
   }
@@ -1173,21 +1147,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .site-main .module-main {
+  background: url("../../../img/image-home-unsplash.jpg") center center;
+  background-size: cover;
   color: white;
-  max-height: 700px;
-  overflow-y: hidden;
+  height: 400px;
+  max-height: 500px;
   position: relative;
+}
+@media (max-width: 45em) {
+  .site-main .module-main {
+    height: 200px;
+  }
 }
 .site-main .module-main .titre-slider {
   color: white;
   position: absolute;
-  bottom: 2em;
-  right: 2em;
+  bottom: 0.5em;
+  left: 1em;
   font-size: 3em;
   font-family: 'carbontyperegular', arial;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 45em) and (max-width: 70em) {
+@media only screen and (min-width: 45em) and (max-width: 65em) {
   .site-main .module-main .titre-slider {
     bottom: 0.5em;
     right: 0.5em;
@@ -1204,43 +1185,86 @@ h1, h2, h3, h4, h5, h6 {
 .site-main .module-main img {
   display: block;
 }
-.site-main .module-cervezas {
+.site-main .module-cervezas-logos {
   background: url("../../../img/ricepaper2.png") white;
   color: #83644a;
   color: #555453;
   padding: 4em 10%;
   margin-left: -80px;
 }
-@media only screen and (min-width: 45em) and (max-width: 70em) {
-  .site-main .module-cervezas {
+@media only screen and (min-width: 45em) and (max-width: 65em) {
+  .site-main .module-cervezas-logos {
     padding: 4em 15%;
   }
 }
 @media (max-width: 45em) {
-  .site-main .module-cervezas {
+  .site-main .module-cervezas-logos {
     padding: 1em 2.5%;
   }
 }
-.site-main .module-cervezas .module-cerveza {
+.site-main .module-cervezas-logos .module-cerveza-descripcion {
   text-align: center;
 }
-.site-main .module-cervezas h4 {
+.site-main .module-cervezas-logos h4 {
   color: #555453;
-  font-size: 2em;
+  font-size: 3em;
   color: #dd9716;
   margin: 1em 0;
 }
-.site-main .module-cervezas h6 {
-  margin-bottom: 1em;
-  font-family: 'dejavu_serifitalic', serif;
-  font-size: 0.85em;
-  color: #dd9716;
+@media only screen and (min-width: 45em) and (max-width: 65em) {
+  .site-main .module-cervezas-logos h4 {
+    margin: 0.5em 0;
+  }
 }
-.site-main .module-cervezas img {
+@media (max-width: 45em) {
+  .site-main .module-cervezas-logos h4 {
+    margin: 0.5em 0;
+  }
+}
+.site-main .module-cervezas-logos img {
   margin: 0 auto;
 }
-.site-main .module-cervezas p {
+.site-main .module-cervezas-logos p {
   text-align: justify;
+}
+.site-main .module-cervezas-calidades {
+  background: #5B696F;
+  color: #ffffff;
+}
+.site-main .module-cervezas-calidades .module-cerveza-calidad-title {
+  margin-left: 80px;
+}
+@media only screen and (min-width: 45em) and (max-width: 65em) {
+  .site-main .module-cervezas-calidades .module-cerveza-calidad-title {
+    display: none;
+  }
+}
+@media (max-width: 45em) {
+  .site-main .module-cervezas-calidades .module-cerveza-calidad-title {
+    display: none;
+  }
+}
+.site-main .module-cervezas-calidades .module-cerveza-line {
+  margin-left: 80px;
+  padding: 2em 0;
+  border-bottom: 1px solid #809097;
+}
+@media (max-width: 45em) {
+  .site-main .module-cervezas-calidades .module-cerveza-line {
+    margin-left: 0;
+  }
+}
+.site-main .module-cervezas-calidades .module-cerveza-line:nth-child(2) {
+  border-top: 1px solid #809097;
+}
+.site-main .module-cervezas-calidades h6 {
+  font-family: 'oswaldlight', serif;
+  font-size: 1.5em;
+  color: #dd9716;
+}
+.site-main .module-cervezas-calidades p {
+  margin: 0;
+  text-align: left;
   font-size: 0.85em;
 }
 .site-main .module-motivacion {
@@ -1248,7 +1272,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   background: url("../../../img/broken_noise.png");
 }
-@media only screen and (min-width: 45em) and (max-width: 70em) {
+@media only screen and (min-width: 45em) and (max-width: 65em) {
   .site-main .module-motivacion {
     padding: 4em 15%;
   }
@@ -1265,19 +1289,31 @@ h1, h2, h3, h4, h5, h6 {
   text-align: justify;
   font-size: 0.85em;
 }
-.site-main .module-motivacion h4 {
+.site-main .module-motivacion h1 {
+  font-family: 'oswaldlight', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 3em;
   color: #555453;
-  color: white;
-  margin: 1em 0;
+  margin: 0.5em 0;
   text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   line-height: 1.4em;
 }
 @media (max-width: 45em) {
-  .site-main .module-motivacion h4 {
+  .site-main .module-motivacion h1 {
     font-size: 2em;
   }
+}
+.site-main .module-motivacion h3 {
+  font-family: 'oswaldlight', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #555453;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.site-main .module-motivacion .module-tomate {
+  margin-top: 2em;
 }
 .site-main .module-motivacion .icon-lupulo {
   display: block;
@@ -1301,7 +1337,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #dd9716;
 }
 .site-footer .site-info p:last-child {
-  font-family: 'dejavu_serifitalic', serif;
+  font-family: 'latolight', sans-serif;
 }
 .site-footer .site-legal {
   margin-top: 2em;
@@ -1363,7 +1399,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  font: normal 100%/1.65 "dejavu_serifbook", serif;
+  font: normal 100%/1.65 "latolight", serif;
 }
 
 body {

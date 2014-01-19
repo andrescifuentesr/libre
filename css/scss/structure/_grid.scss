@@ -122,8 +122,8 @@ $use-markup-fix:        true!default;
  */
 $breakpoints: (
     'phone' '(max-width: 45em)',
-    'tablet' '(min-width: 45em) and (max-width: 70em)',
-    'lap' '(min-width: 70em) and (max-width: 90em)',
+    'tablet' '(min-width: 45em) and (max-width: 65em)',
+    'lap' '(min-width: 65em) and (max-width: 90em)',
     'desk' '(min-width: 90em)'
 );
 

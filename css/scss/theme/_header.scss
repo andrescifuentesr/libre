@@ -6,7 +6,7 @@
 }
 
 .site-social-header {
-	width:20%;
+	width:25%;
 	float:right;
 	margin-top: 2.5em;
 	@include mq(tablet) {width:100%;
@@ -19,13 +19,13 @@
 }
 
 .site-branding {
-	width:80%;
+	width:75%;
 	float:left;
 	@include mq(phone) {width:100%;}
 	@include mq(tablet) {width:100%;}
 
 
-		a {margin-left: 50%;
+		a {margin-left: 55%;
 			text-indent: -9999px;
 			background: url('../../../img/logo-libre.svg') no-repeat;
 			display: block;

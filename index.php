@@ -17,76 +17,108 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="module-main">
-				<img src="<?php bloginfo('template_directory'); ?>/img/image-home-unsplash.jpg" alt="Campo de cebada">
 				<span class="titre-slider">Tomate tu libertad <br/>y escoge tu cerveza</span>
 			</section>
 
 
-			<section class="module-cervezas">
-				<div class="module-cerveza">
+			<section class="module-cervezas-logos">
+				<div class="module-cerveza-descripcion">
 					<img src="<?php bloginfo('template_directory'); ?>/img/logo-pasion.svg" alt="cerveza Pasión">
 					<div class="descripcion-cerveza pasion">
 						<h4>Libre Pasión</h4>
-						
-						<h6>Estilo: </h6>
-						<p>Fruit American Wheat Ale. Alc/Vol: 4.5% IBUs: 16 </p>
 						<p>Esta cerveza de trigo ha sido madurada con pulpa pura de maracuyá. De intenso aroma, color dorado, agradable sabor cítrico y refrescante. Esta unión de cerveza y fruta brinda un encanto único lleno de pasión. Tiene cuerpo ligero y espuma alta. Tómala lo más fresca posible. </p>
-
-						<h6>Maltas:</h6>
-						<p>2 Row, White Wheat y Bonlander Munich <br>&nbsp;<br>
-						
-						<h6>Lúpulos:</h6> 
-						<p>Cascade </p>
-
-						<h6>Maridaje:</h6> 
-						<p>Ideal para disfrutar con entradas ligeras, carnes blancas, carnes frías poco maduradas y con picante suave, postres con frutas cítricas y quesos suaves.</p>
 					</div>
 				</div><!--
-				--><div class="module-cerveza">
+				--><div class="module-cerveza-descripcion">
 					<img src="<?php bloginfo('template_directory'); ?>/img/logo-ipa.svg" alt="cerveza Ipà">
 					<div class="descripcion-cerveza ipa">
 						<h4>Libre IPA</h4>
-						
-						<h6>Estilo: </h6>
-						<p>American India Pale Ale. Alc/Vol: 5.5% IBUs: 60 </p>
-
-						<p>Esta cerveza está hecha con maltas acarameladas y una cantidad generosa de lúpulo que le da un agradable y especial amargor, con intenso aroma cítrico y floral. De color dorado oscuro, cuerpo medio y espuma gruesa. <br>&nbsp;</p>
-
-
-						<h6>Maltas:</h6>
-						<p>2 Row, Bonlander Munich, Caramel y Carapils <br>&nbsp;<br>
-						
-						<h6>Lúpulos:</h6>
-						<p>Cascade, Columbus y Centennial </p>
-
-						<h6>Maridaje:</h6>
-						<p>Ideal para disfrutar platos con curry, platos condimentados, madurados y quesos fuertes tipo azul.</p>
+						<p>Esta cerveza está hecha con maltas acarameladas y una cantidad generosa de lúpulo que le da un agradable y especial amargor, con intenso aroma cítrico y floral. De color dorado oscuro, cuerpo medio y espuma gruesa.</p>
 					</div>
 				</div><!--
-				--><div class="module-cerveza">
+				--><div class="module-cerveza-descripcion">
 					<img src="<?php bloginfo('template_directory'); ?>/img/logo-avellana.svg" alt="cerveza Avellana">
 					<div class="descripcion-cerveza avellana">
 						<h4>Libre Avellana</h4>
-
-						<h6>Estilo: </h6>
-						<p>American Brown Ale. Alc/Vol: 5% IBUs: 30 </p>
-
-						<p>Esta cerveza de estilo Brown Ale está hecha con una mezcla de maltas caramelo y extracto natural de avellana. Tiene agradable aroma a caramelo y nueces, un suave sabor tostado y su color es café rojizo. Tiene cuerpo y espuma media. Una cerveza rica en aromas y sabores.<br>&nbsp;<br>&nbsp;</p>
-
-						<h6>Maltas:</h6>
-						<p>2 Row, Bonlander Munich, Caramel y Chocolate Malt <br>
-						<h6>Lúpulos:</h6> 
-						<p>Perle </p>
-
-						<h6>Maridaje:</h6> 
-						<p>Ideal para disfrutar con carnes o peces ahumados, queso tipo holandés o gouda.</p>
+						<p>Esta cerveza de estilo Brown Ale está hecha con una mezcla de maltas caramelo y extracto natural de avellana. Tiene agradable aroma a caramelo y nueces, un suave sabor tostado y su color es café rojizo. Tiene cuerpo y espuma media. Una cerveza rica en aromas y sabores.</p>
 					</div>
 				</div>
 			</section>
-			<section class="module-motivacion">
-								
-				<h4>Acerca de nosotros:</h4>
 
+
+			<section class="module-cervezas-logos module-cervezas-calidades">
+				<div class="module-cerveza-calidad-title module-cerveza-calidad-line"><!--
+				--><div class="descripcion-cerveza-item">
+						&nbsp;
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<h6>Estilo: </h6>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<h6>Maltas:</h6>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<h6>Lúpulos: </h6>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<h6>Maridaje: </h6>
+					</div>
+				</div><!--
+			--><div class="module-cerveza-line"><!--
+				--><div class="descripcion-cerveza-item">
+						<h6>LIBRE PASIÓN</h6>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>Fruit American Wheat Ale. Alc/Vol: 4.5% IBUs: 16 </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>2 Row, White Wheat y Bonlander Munich </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>Cascade </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>Ideal para disfrutar con entradas ligeras, carnes blancas, carnes frías poco maduradas y con picante suave, postres con frutas cítricas y quesos suaves.</p>
+					</div>
+				</div><!--
+			--><div class="module-cerveza-line"><!--
+				--><div class="descripcion-cerveza-item">
+						<h6>LIBRE IPA</h6>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>American India Pale Ale. Alc/Vol: 5.5% IBUs: 60 </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>2 Row, Bonlander Munich, Caramel y Carapils </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>Cascade, Columbus y Centennial </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>Ideal para disfrutar platos con curry, platos condimentados, madurados y quesos fuertes tipo azul.</p>
+					</div>
+				</div><!--
+			--><div class="module-cerveza-line"><!--
+				--><div class="descripcion-cerveza-item">
+						<h6>LIBRE AVELLANA</h6>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>American Brown Ale. Alc/Vol: 5% IBUs: 30 </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>2 Row, Bonlander Munich, Caramel y Chocolate Malt </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>Perle </p>
+					</div><!--
+				--><div class="descripcion-cerveza-item">
+						<p>Ideal para disfrutar con carnes o peces ahumados, queso tipo holandés o gouda.</p>
+					</div><!--
+			--></section>
+
+
+			<section class="module-motivacion">		
+				<h1>Acerca de nosotros:</h1>
 				<div class="grid">
 					<div class="module-motivacion-item">
 						<img src="<?php bloginfo('template_directory'); ?>/img/lupulo-pasion.svg" alt="Icon lúpulo" class="icon-lupulo">
@@ -107,7 +139,10 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<h4>Tómate la libertad de probarla. <br>Tómate  la libertad de elegir que tomarte.</h4>
+				<div class="module-tomate">
+					<h3>Tómate la libertad de probarla. </h3>
+					<h3>Tómate  la libertad de elegir que tomarte.</h3>
+				</div>
 
 			</section>
 			<section class="module-map">
